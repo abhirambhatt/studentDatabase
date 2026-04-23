@@ -10,22 +10,43 @@ A simple REST API for managing student records using Spring Boot, JPA/Hibernate,
 - Maven
 
 ## Project Structure
-src/
-├── main/
-│   ├── java/com/StudentDatabase/studentDatabase/
-│   │   ├── StudentDatabaseApplication.java
-│   │   ├── controller/
-│   │   │   └── studentController.java
-│   │   ├── dao/
-│   │   │   ├── studentDatabaseDAO.java
-│   │   │   └── studentDatabaseDAOImpl.java
-│   │   ├── entity/
-│   │   │   └── Data.java
-│   │   └── config/
-│   │       └── SecurityConfig.java
-│   └── resources/
-│       └── application.properties
-└── test/
+student-database/
+│
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/studentdatabase/
+│   │   │       ├── StudentDatabaseApplication.java
+│   │   │
+│   │   │       ├── rest/
+│   │   │       │   └── StudentController.java
+│   │   │
+│   │   │       ├── dao/
+│   │   │       │   ├── StudentDAO.java
+│   │   │       │   └── StudentDAOImpl.java
+│   │   │
+│   │   │       ├── entity/
+│   │   │       │   └── Student.java
+│   │   │
+│   │   │       ├── service/        (optional but recommended)
+│   │   │       │   ├── StudentService.java
+│   │   │       │   └── StudentServiceImpl.java
+│   │   │
+│   │   │       └── config/         (for security later)
+│   │   │           └── SecurityConfig.java
+│   │
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       └── schema.sql (optional)
+│
+│   └── test/
+│
+├── target/
+├── pom.xml
+├── mvnw
+├── mvnw.cmd
+├── .gitignore
+└── README.md
 
 ## API Endpoints
 
