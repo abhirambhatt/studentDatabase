@@ -9,45 +9,6 @@ A simple REST API for managing student records using Spring Boot, JPA/Hibernate,
 - MySQL 9.6
 - Maven
 
-## Project Structure
-student-database/
-│
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/studentdatabase/
-│   │   │       ├── StudentDatabaseApplication.java
-│   │   │
-│   │   │       ├── rest/
-│   │   │       │   └── StudentController.java
-│   │   │
-│   │   │       ├── dao/
-│   │   │       │   ├── StudentDAO.java
-│   │   │       │   └── StudentDAOImpl.java
-│   │   │
-│   │   │       ├── entity/
-│   │   │       │   └── Student.java
-│   │   │
-│   │   │       ├── service/        (optional but recommended)
-│   │   │       │   ├── StudentService.java
-│   │   │       │   └── StudentServiceImpl.java
-│   │   │
-│   │   │       └── config/         (for security later)
-│   │   │           └── SecurityConfig.java
-│   │
-│   │   └── resources/
-│   │       ├── application.properties
-│   │       └── schema.sql (optional)
-│
-│   └── test/
-│
-├── target/
-├── pom.xml
-├── mvnw
-├── mvnw.cmd
-├── .gitignore
-└── README.md
-
 ## API Endpoints
 
 ### Get All Students
