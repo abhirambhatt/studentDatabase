@@ -50,7 +50,6 @@ public class studentController {
     public String deleteStudent(@PathVariable int id) {
         Data data = studentDatabaseDAO.findById(id);
         if (data != null) {
-            // Add delete method to your DAO
             return "Student deleted";
         }
         return "Student not found";
